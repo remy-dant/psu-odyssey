@@ -1,0 +1,736 @@
+html,
+body,
+form,
+fieldset,
+div,
+span,
+table,
+tr,
+td,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    font-size: 13px;
+}
+
+/* Menus déroulants sans flèche */
+.moduletable_menu h3,
+.moduletable h3 {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    transition: background-color .2s;
+    margin-bottom: 0;
+}
+
+.mod-collapse+ul.menu {
+    display: block;
+}
+
+.collapsed+ul.menu {
+    display: none;
+}
+
+.moduletable_menu h3:hover,
+.moduletable h3:hover {
+    background-color: #062331;
+}
+
+body.mainbody {
+    background: #0B1C23 url('../assets/images/ui/background.png') repeat-x;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+
+}
+
+#mainhead1 {
+    position: relative;
+    background: url('../assets/images/ui/head_bg.png') repeat-x;
+    width: 902px;
+    height: auto;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    /* ajustez selon la taille de votre image */
+    height: auto;
+    /* ajustez selon la taille de votre image */
+    margin: 0 auto;
+}
+
+.logo-img {
+    position: absolute;
+    top: 0px;
+    /* distance du haut de grey_bg.png */
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.topmenu {
+    position: absolute;
+    white-space: nowrap;
+    border-top: 1px solid #7E8083;
+    border-bottom: 1px solid #7E8083;
+    text-align: left;
+    width: 100%;
+    color: #F0F5F8;
+    margin-top: -3px;
+}
+
+#topmenu a:link,
+#topmenu a:visited {
+    float: left;
+    display: block;
+    padding: 4px 10px 7px 10px;
+    font-size: 10px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    line-height: 1px;
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    color: #F0F5F8;
+    margin-top: 2px;
+}
+
+.topmenu a:hover {
+    background: url('../assets/images/ui/menubg_hover.png') no-repeat center center;
+    color: #fff;
+    text-align: center;
+    /* Espace entre les menu */
+    background-size: 1000%;
+}
+
+
+#bread {
+    padding: 8px 12px 0px 12px;
+    font-size: 75%;
+    color: #F0F5F8;
+    height: 16px;
+    border-bottom: 2px solid #6A6A6A;
+    text-align: left;
+    margin-top: 42px;
+}
+
+#bread a {
+    color: #F0F5F8;
+    text-decoration: underline;
+}
+
+#bread a:hover {
+    color: #F0F5F8;
+    text-decoration: underline;
+}
+
+#wrapper {
+    background: url('../assets/images/ui/grey_bg.png') repeat-y center top;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#leftmenu {
+    float: left;
+    width: 193px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding-left: 4px;
+}
+
+#leftmenu h3 {
+    margin-left: 5px;
+    width: 163px;
+    border-left: 1px solid #6A6A6A;
+    border-right: 1px solid #6A6A6A;
+}
+
+h3 {
+    background: url('../assets/images/ui/bg_h3.png') repeat-x;
+    color: #fff;
+    height: 25px;
+    padding: 10px 0 5px 15px;
+    background-color: #020E15;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSO2 avec image personnalisée */
+
+/* Module Phantasy Star */
+.module-ps h3.ps-header {
+    background: url('../assets/images/logos/Pslogo.jpg') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module Phantasy Star II */
+.module-ps2 h3.ps2-header {
+    background: url('../assets/images/logos/Phantasy-Star-II-Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module Phantasy Star III */
+.module-ps3 h3.ps3-header {
+    background: url('../assets/images/logos/phantasy-star-iii-logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module Phantasy Star IV */
+.module-ps4 h3.ps4-header {
+    background: url('../assets/images/logos/Phantasy-Star-IV-Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSO Episode I & II */
+.module-psoep12 h3.psoep12-header {
+    background: url('../assets/images/logos/Phantasy_Star_Online_episode_I_&_II_Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSO Episode III */
+.module-psoep3 h3.psoep3-header {
+    background: url('../assets/images/logos/Phantasy_Star_Online_3_Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSO Blue Burst */
+.module-psobb h3.psobb-header {
+    background: url('../assets/images/logos/Phantasy_Star_Online_episode_BleuBurst_Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PS Universe */
+.module-psu h3.psu-header {
+    background: url('../assets/images/logos/Phantasy_Star_Universe_Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSP Portable avec image personnalisée */
+.module-psp h3.psp-header {
+    background: url('../assets/images/logos/Phantasy_Star_Portable_Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PS0 avec image personnalisée */
+.module-ps0 h3.ps0-header {
+    background: url('../assets/images/logos/Phantasy_Star_0_Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSP2 Portable 2 avec image personnalisée */
+.module-psp2 h3.psp2-header {
+    background: url('../assets/images/logos/Phantasy_Star_Portable_2_Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSP2I Infinity avec image personnalisée */
+.module-psp2i h3.psp2i-header {
+    background: url('../assets/images/logos/psp2i.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSO2 avec image personnalisée */
+.module-pso2 h3.pso2-header {
+    background: url('../assets/images/logos/Phantasy_Star_Online_2_Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    /* cache le texte s'il y en avait */
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSN Nova avec image personnalisée */
+.module-psn h3.psn-header {
+    background: url('../assets/images/logos/Phantasy-Star-Nova-Logo.png') center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Module PSO2 New Genesis avec image personnalisée */
+.module-pso2ng h3.pso2ng-header {
+    background: url(../assets/images/logos/Phantasy-Star-Online-2-NG-Logo.png) center center / contain no-repeat, #ffffff;
+    height: 60px;
+    padding: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    border-top: 1px solid #7E8083;
+}
+
+/* Texte accessible caché visuellement */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+#leftmenu li {
+    list-style-image: none;
+    text-align: center;
+    line-height: 35px;
+}
+
+.moduletable ul li ul li {
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.moduletable_menu {
+    margin-bottom: 2px;
+    margin-top: -41px;
+    width: 200px;
+}
+
+.menu {
+    position: flex;
+    top: 20px;
+    width: 200px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    background: url(../assets/images/ui/menubg.png) no-repeat;
+    text-align: center;
+    width: 180px;
+    margin-left: -35px;
+    margin-bottom: -10px;
+    /* Espace entre les menu */
+}
+
+.moduletable {
+    margin-bottom: 2px;
+    /* Mets une valeur plus petite, par exemple 8px */
+    margin-top: 20px;
+}
+
+#leftmenu li a:hover {
+    background: url(../assets/images/ui/menubg_hover.png) no-repeat;
+
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+li {
+
+    list-style: none;
+    padding: 5px 0;
+    display: flex;
+    margin: 0;
+    text-align: center;
+}
+
+#inner_wrapper2 {
+    width: 493px;
+    float: left;
+}
+
+#usermodL {
+    background: url(../assets/images/ui/newsbg.png) repeat-x;
+    width: 704px;
+    float: left;
+    border-left: 1px solid #6A6A6A;
+    border-bottom: 1px solid #6A6A6A;
+    /* espace entre les deux blocs */
+    /* Ajoute une largeur si besoin */
+}
+
+#usermodLR {
+    width: 496px;
+    float: left;
+    border-left: 1px solid #6A6A6A;
+    border-right: 1px solid #6A6A6A;
+}
+
+#contentL {
+    width: 704px;
+    background: #DBDEDF;
+    padding: 0 0 10px 0px;
+    border-left: 1px solid #6A6A6A;
+    border-top: 1px solid #6A6A6A;
+    clear: left;
+    overflow: visible;
+    /* ou auto si tu veux un scroll si trop d'articles */
+    border: none;
+}
+
+#contentL h3 {
+    height: 35px;
+    border: none;
+}
+
+.componentheading {
+    height: 35px;
+    background: url(../assets/images/ui/content_h3.png) repeat-x;
+    padding: 10px 5px 5px 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    width: 685px;
+    float: left;
+    border-left: 1px solid #6A6A6A;
+    border-top: 1px solid #6A6A6A;
+    border: none;
+}
+
+.small,
+.createdate,
+.modifydate {
+    color: #2F6C88;
+    font-size: 90%;
+    line-height: normal;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.contentheading,
+table.moduletable th,
+legend {
+    height: 25px;
+    background: url(../assets/images/ui/bg_h3.png) repeat-x;
+    padding: 10px 70px 5px 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    width: 10%;
+}
+
+.footer {
+    position: relative;
+    margin-top: auto;
+    background: url(../assets/images/ui/footer_bg.png) repeat-x;
+    padding-bottom: 1px;
+    border-top: 1px solid #6A6A6A;
+    text-align: center;
+    color: #F0F5F8;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Formulaire inscription (style moderne) ===== */
+.signup-panel {
+    max-width: 560px;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    border: 1px solid #6A6A6A;
+    border-radius: 8px;
+    padding: 20px 26px 28px 26px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+.signup-title {
+    margin: 0 0 18px 0;
+    font-size: 18px;
+    color: #062331;
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.signup-form .form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form .two-cols {
+    flex-direction: row;
+    gap: 12px;
+}
+
+.signup-form .two-cols .col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2F6C88;
+    margin-bottom: 4px;
+    letter-spacing: .5px;
+}
+
+.form-field,
+.signup-form select,
+.signup-form textarea {
+    border: 1px solid #A3B6BE;
+    background: #F5F8FA;
+    padding: 8px 10px;
+    font-size: 13px;
+    border-radius: 4px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.form-field:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+    outline: 2px solid #2F6C88;
+    background: #fff;
+}
+
+/* Taille spécifique du sélecteur pays téléphone */
+#phone-country {
+    width: 190px;
+    height: 36px;
+    padding: 6px 10px;
+    line-height: 1.2;
+}
+
+/* Taille spécifique du champ numéro de téléphone */
+#phone-input {
+    width: 290px;
+    height: 36px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+}
+
+/* Alignement horizontal du select + input téléphone */
+.phone-inline {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.phone-row {
+    gap: 6px;
+}
+
+@media (max-width: 480px) {
+    .phone-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #phone-country,
+    #phone-input {
+        width: 100%;
+    }
+}
+
+.checkbox-row {
+    margin-top: 4px;
+}
+
+.checkbox-label {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.note-row small {
+    font-size: 11px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.submit-row {
+    text-align: center;
+    margin-top: 4px;
+}
+
+.btn-primary {
+    background: linear-gradient(#2F6C88, #0B1C23);
+    color: #fff;
+    border: 1px solid #0B1C23;
+    padding: 10px 26px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    letter-spacing: .5px;
+    transition: background .25s, transform .15s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(#3d89aa, #0B1C23);
+}
+
+/* Variante transparente du bouton primaire (état normal transparent, reprend le style au survol) */
+.btn-primary.btn-transparent {
+    background: transparent;
+    color: #2F6C88;
+    /* couleur texte cohérente avec le thème */
+    border: 1px solid #2F6C88;
+}
+
+.btn-primary.btn-transparent:hover {
+    background: linear-gradient(#2F6C88, #0B1C23);
+    /* reprend le dégradé d'origine */
+    color: #fff;
+}
+
+/* Bouton lien (toggle téléphone/email) */
+.toggle-row {
+    text-align: left;
+    margin-top: -4px;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #2F6C88;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline;
+    line-height: 1.1;
+    appearance: none;
+    -webkit-appearance: none;
+    min-width: 0;
+}
+
+.btn-link:hover {
+    color: #0B1C23;
+}
+
+.btn-link:focus {
+    outline: 1px dashed #2F6C88;
+    outline-offset: 2px;
+}
+
+.btn-primary:active {
+    transform: scale(.97);
+}
+
+.btn-primary:focus {
+    outline: 2px solid #62b4d8;
+}
+
+/* utilitaires */
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 560px) {
+    .signup-form .two-cols {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Date de naissance (sélecteurs) */
+.dob-inline {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#birth-day {
+    width: 80px;
+    height: 36px;
+}
+
+#birth-month {
+    width: 312px;
+    height: 36px;
+}
+
+#birth-year {
+    width: 80px;
+    height: 36px;
+}
+
+@media (max-width:640px) {
+    #birth-month {
+        width: 180px;
+    }
+}
